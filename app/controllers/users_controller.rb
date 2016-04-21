@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
   
   def show
     @user = User.find(params[:id])
@@ -7,14 +6,6 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
-  end
-
-=======
-  def show
-    @user = User.find(params[:id])
-  end
-  def new
-  	@user=User.new
   end
   
  def create
@@ -33,5 +24,5 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
->>>>>>> sign-up
+
 end
